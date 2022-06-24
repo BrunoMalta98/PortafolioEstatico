@@ -3,48 +3,56 @@
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
+    <title>Mi Portafolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
     
-    <nav class="barraSuperior" >
+  <a name="inicio"></a>
+    <nav class="barraSuperior">
     
     
-        <img class="marca" src="./assets/instagram.png">
-        <button type="button" class="buttonLogin">Login</button>
-        <a class="redes"><img src="./assets/instagram.png"></a>
-        <a class="redes"><img src="./assets/whatsapp.png"></a>
-        <a class="redes"><img src="./assets/linkedin.png"></a>
+        <a href="#inicio"><img class="marca" src="./assets/instagram.png"></a>
+        <a href="login.html"><button type="button" class="buttonLogin">Login</button></a>
+        <a href="#contactoAncla"><button type="button" class="buttonLogin">Contacto</button></a>
+        <a href="#proyectosAncla"><button type="button" class="buttonLogin">Proyectos</button></a>
+        <a href="#acercaDeAncla"><button type="button" class="buttonLogin">Acerca De</button></a>
+        
     
      </nav>
     
-
+      
      <section class="portada">
 
         <img src="./assets/Portada.jpg" class="portada" width="100%" height="100%">
       
       </section>
     
-      <hr>
+     
+    
 
+    
+    
+    <a name="acercaDeAncla"></a>
     <section class="acercaDe">
-
+      
         <h1 style="float:left;width: 50%; height: 80px;">Acerca de:</h1>
-        
-        <img src="./assets/fotoperfil.jpeg" class="img-thumbnail" alt="..." style="float: right; margin-right: 10%; width: 200px; height:200 px; padding-top: 0px;border-radius: 50%;border-color: black;">
-        <br>
-        
+        <div class="div" style="margin-left: 78%; margin-top:2%;">
+        <img src="./assets/perfil.jpeg" alt="fotoperfil" style=" width: 200px; height:200 px; padding-top: 0px;border-radius: 50%;border-color: black; border: 10px solid rgba(0, 0, 0, 0.712);position: absolute;">
+        </div>
         
         <div class="card" style="width: 70%;float: left;" >
             
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Me llamo Bruno Maltagliati y soy un desarrollador web full stack.
-                    asdas
-                    asdadasd
+            <div class="card-body" style="background-color: rgb(194, 61, 61)">
+              <blockquote class="blockquote mb-0" style="background-color: rgb(194, 61, 61)">
+                <p style="font:bold 28px verdana;">Hola me llamo Bruno y soy un Desarrollador Web Full Stack, con vasta 
+                  experiencia en el desarrollo de aplicaciones
+                  web responsive. Perfil proactivo con 
+                  facilidad de aprendizaje, buenas 
+                  habilidades comunicacionales,
+                  focalizado y orientado a los resultados.
                 </p>
                 
               </blockquote>
@@ -52,57 +60,108 @@
           </div>
         
          
-
+    
     </section>
+    
 
-    <hr>
+  
+    
+    <section class="skills">
 
-    <section class="habilidades">
+      <h1 style="color: rgb(231, 231, 231);">Hard y Soft Skills</h1>
 
-        <h1 style="float:left;width: 50%; height: 80px;">Habilidades:</h1>
-
-        <br>
-        <br>
-        <br>
-        <br>
-       
-            <h4 style="float:left;width: 10%;">HTML</h4>
-        <div class="progress" style="width: 80%;height:5%;" >
-            <div class="progress-bar bg-success" role="progressbar" style="width: 90%; float: left;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso blue">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">90%</div>
+            </div>
+            <h5 class="lenguaje">Html</h5>
           </div>
+        
       
-        <br>
-        
-            <h4 style="float:left;width: 10%">CSS</h4>
-          <div class="progress" style="width: 80%;height:5%;">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 90%;float: left;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">90%</div>
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso yellow">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">75%</div>
+            </div>
+            <h5 class="lenguaje">Css</h5>
           </div>
-        
-        <br>
-       
-            <h4 style="float:left;width: 10%">JAVASCRIPT</h4>
-          <div class="progress" style="width: 80%;height:5%;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;float: left;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+
+
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso pink">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">60%</div>
+            </div>
+            <h5 class="lenguaje">Javascript</h5>
           </div>
-        
-        <br>
-        
-            <h4 style="float:left;width: 10%">MYSQL</h4>
-          <div class="progress" style="width: 80%;height:5%;">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;float: left;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
+
+
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso red">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">75%</div>
+            </div>
+            <h5 class="lenguaje">MySql</h5>
           </div>
-        
-        <br>
-        
-            <h4 style="float:left;width: 10%">BOOTSTRAP</h4>
-          <div class="progress" style="width: 80%;height:5%;">
-            <div class="progress-bar" role="progressbar" style="width: 75%;float: left;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">75%</div>
+          
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso green">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">50%</div>
+            </div>
+            <h5 class="lenguaje">Angular</h5>
           </div>
-       
+          
+          <div class="col-md-2 col-sm-6">
+            <div class="progreso yellow">
+              <span class="progreso-left">
+                <span class="progreso-bar"></span>
+              </span>
+              <span class="progreso-right">
+                <span class="progreso-bar"></span>
+              </span>
+              <div class="progreso-value">75%</div>
+            </div>
+            <h5 class="lenguaje">React</h5>
+          </div>
+
+        </div>
+      </div>
+
+     
     </section>
-
-    <hr>
-
+    
+    
+    <a name="proyectosAncla"></a>
     <section class="proyectos">
 
         <h1 style="float:left;width: 50%; height: 80px;">Proyectos:</h1>
@@ -116,7 +175,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="buttonNavegacion">Go somewhere</a>
             </div>
           </div>
 
@@ -125,7 +184,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="buttonNavegacion">Go somewhere</a>
             </div>
           </div>
 
@@ -134,7 +193,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="buttonNavegacion">Go somewhere</a>
             </div>
           </div>
 
@@ -143,14 +202,50 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="buttonNavegacion">Go somewhere</a>
             </div>
           </div>
 
     </section>
+    
+    <a name="contactoAncla"></a>
+    <section class="contacto" >
+
+      <h1 style="color: rgb(231, 231, 231);">Contacto</h1>
+      <br>
+      <div class="contactoContainer">
+        <ul>
+        <li>
+            <label class="textoEmail">Email: </label>
+            <input class="entrada" type="email" name="email" placeholder="Introduce tu Email">
+        </li>
+        <li>
+            <label class="texto">Nombre: </label>
+            <input class="entrada" type="text" name="nombre" placeholder="Introduce tu Nombre">
+        </li>
+        <li>
+            <label class="texto">Telefono: </label>
+            <input class="entrada" type="text" name="telefono" placeholder="Introduce tu Telefono">
+        </li>
+        <li>
+            <label class="texto">Aclaraciones,Propuestas y Consultas:  </label>
+            <br>
+            <textarea class="textArea" type="text" name="consultas" placeholder="Escriba Aqui..." ></textarea>
+        </li>
+        
+        <button class="btn">Enviar</button>
+        </ul>   
+      </div>
+
+    </section>
+
+
 
     <footer > 
         <a>Footer</a>
+        <a class="redes"><img src="./assets/instagram.png"></a>
+        <a class="redes"><img src="./assets/whatsapp.png"></a>
+        <a href="https://www.linkedin.com/in/bruno-maltagliati-30099b194/" class="redes"><img src="./assets/linkedin.png"></a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
